@@ -50,7 +50,8 @@ body {
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
-ol[class] {
+ol[class],
+li {
 	list-style: none;
 }
 
@@ -98,12 +99,23 @@ img:not([alt]) {
 	max-width: 1230px;
 	padding: 0 15px;
 	margin: 0 auto;
-	outline: 1px solid red;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+.content__btn {
+	display: inline-block;
+	padding: 30px 60px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid #ffffff;
+	transition: all 0.4s;
+	&:hover {
+		background: #770302;
+		border: 1px solid #770302;
+	}
 }
 /* Root properties for project */
 
@@ -157,18 +169,6 @@ a {
 				font-size: 24px;
 				line-height: 28px;
 				margin-bottom: 25px;
-			}
-
-			.content__btn {
-				display: inline-block;
-				padding: 30px 60px;
-				background: rgba(255, 255, 255, 0.15);
-				border: 1px solid #ffffff;
-				transition: all 0.4s;
-				&:hover {
-					background: #770302;
-					border: 1px solid #770302;
-				}
 			}
 		}
 	}
@@ -253,6 +253,99 @@ a {
 			.item__descr {
 				color: #b70021;
 			}
+		}
+	}
+}
+
+.video {
+	margin-bottom: 100px;
+}
+
+.advantages {
+	.advantages__descr {
+		margin-bottom: 100px;
+		display: flex;
+		justify-content: space-between;
+
+		.advantages__title,
+		.advantages__text {
+			margin: 0;
+		}
+
+		.advantages__title {
+			font-size: 36px;
+			line-height: 42px;
+			margin-bottom: 100px;
+			color: #b70021;
+		}
+
+		.advantages__text {
+			width: 50%;
+		}
+	}
+
+	.advantages__descr--mode {
+		align-items: center;
+
+		.advantages__title--mode {
+			margin-bottom: 0;
+			align-self: flex-end;
+		}
+	}
+}
+
+.design {
+	margin-bottom: 100px;
+
+	.design__image {
+		margin-bottom: 100px;
+	}
+
+	.design__row {
+		display: flex;
+		justify-content: space-between;
+
+		.design__item {
+			display: flex;
+			justify-content: space-between;
+			max-width: 570px;
+			width: 100%;
+
+			.design__num {
+				color: #b70021;
+			}
+
+			.design__text {
+				max-width: 435px;
+				padding-top: 30px;
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 80px 0 20px;
+	background-color: #690102;
+
+	.footer__btn {
+		text-align: center;
+		margin-bottom: 80px;
+	}
+
+	.footer__socials {
+		text-align: center;
+		font-weight: bold;
+
+		li {
+			position: relative;
+			display: inline-block;
+			padding: 0 10px;
+		}
+
+		li + li::before {
+			content: '|';
+			position: absolute;
+			left: -10px;
 		}
 	}
 }

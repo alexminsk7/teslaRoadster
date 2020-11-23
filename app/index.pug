@@ -52,6 +52,72 @@ html(lang="en")
 							span км/ч
 						.item__descr макс скорость
 
+		.video
+			.container
+				picture.video__box
+					source(srcset='./images/roadster.png')
+					img(src='./images/video.jpg' alt='roadster')
+
+		.advantages
+			.container
+				article.advantages__descr
+					.advantages__box
+						h3.advantages__title Скорость
+						p.advantages__text Самый быстроразгоняющийся серийный автомобиль <br> из когда-либо созданных
+					.advantages__image
+						picture
+							img(src="./images/advantage-1.jpg", alt="advantage")
+
+				article.advantages__descr.advantages__descr--mode
+					.advantages__image
+						picture
+							img(src="./images/advantage-2.jpg", alt="advantage")
+					ul.advantages__list
+						li Датчик дождя
+						li Датчик света
+						li Автопилот
+						li Навигационная система
+						li Обогрев зеркал
+						li Усилитель руля
+						li Панорамная крыша
+						li Ксеноновые фары
+					h3.advantages__title.advantages__title--mode Преимущества
+		
+		.design
+			.container
+				.design__image
+					picture
+						img(src="./images/design.jpg", alt="advantage")
+				.design__row
+					.design__item
+						.design__num 01
+						.design__text Новый родстер был разработан бывшим дизайнером Mazda Францем фон Хольцхаузеном. Имеет съёмную стеклянную крышу и кузов с двумя передними сиденьями плюс два небольших сиденья сзади.
+
+					.design__item
+						.design__num 02
+						.design__text Родстер имеет три электродвигателя, один спереди и два сзади, Они обеспечивают полный привод, а также систему адресного распределения крутящего момента для лучшего прохождения поворотов.
+
+		footer.footer
+			.container
+				.footer__btn
+					a.content__btn(href='#!') Хочу тест драйв
+
+				.footer__socials
+					ul
+						li Tesla © 2020
+						li
+							a(href="#!") Privacy & Legal
+						li
+							a(href="#!") Contact
+						li
+							a(href="#!") Careers
+						li
+							a(href="#!") Get Newsletter
+						li
+							a(href="#!") Forums
+						li
+							a(href="#!") Locations
+
 		script(src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous")
 		script(src="./js/slick.min.js")
 		script(src="./js/libs.min.js")
